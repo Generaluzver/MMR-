@@ -1,0 +1,203 @@
+<!-- https://github.com/coderifous/jquery-localize#getting-started -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MMR_Suomi</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+        <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+		</noscript>   
+   <!-- списки меню
+   о нас About Us
+        + короткое описание
+        + история создания
+        + наша группа
+   спонсоры Sponsors
+        + спонсоры картинками при нажатии переход на официальные сайты
+    новости (на главной) - одежда . репортажи . новые альбомы видео...
+        + должно при нажатии на текст переходить в новое окно с инфой
+        + сделать 7 слайдеров 
+        + при наведении на снопки снизу должны появлятся маленькие иконки с новостью и отражением 
+    контакты 
+        + впихнуть мой конверт с мэйлами
+        + телефоны
+        + другие сайты     
+    новости (на главной) 
+        - сделать картинки при наведении на них перекидывает в новое окно с инфой о клипе и видео
+        - сделать "поделиться " - показывает код страницы для пересылания в другие соц сети
+   галерея 
+        - группы 
+        - фаны 
+   видео (официальное)
+        + на главную скинуть несколько клипов для примера
+        - сделать картинки при наведении на них перекидывает в новое окно с инфой о клипе и видео
+        - сделать "поделиться " - показывает код страницы для пересылания в другие соц сети
+   метал чат
+    епортажи новости  статьи
+        + кделать каменной кладкой все блоки
+    релизы  
+        - сделать сложный переход по странице
+        - использовать алфавит для поиска нужной группы
+        - сделать картинки при наведении на них перекидывает в новое окно с инфой о клипе и видео
+        - сделать "поделиться " - показывает код страницы для пересылания в другие соц сети
+   магазин 
+        - одежда(с категориями) 
+        - распродажа
+    + весь сайт сделать многоязычным
+    - сделать высплывающие окно на каждой странице (bootstrap) с подсказками
+    bootstrap css
+    написать что сайт фейковый)  в файле - репортажи
+    http://getbootstrap.ru/docs/v4-alpha/components/modal/ -->
+
+    <!-- защита от копирования текста -->
+<script type="text/javascript">
+    document.ondragstart = noselect; 
+    // запрет на перетаскивание 
+    document.onselectstart = noselect; 
+    // запрет на выделение элементов страницы 
+    document.oncontextmenu = noselect; 
+    // запрет на выведение контекстного меню 
+    function noselect() {return false;} 
+</script>
+
+
+        <div class="container">
+            <div class="header">
+                <a href="aboutus_ru.html">
+                    <strong>&laquo; О нас </strong>Мурена Moрэй знает о реальной силе и мощи гитары!
+                </a>
+                <span class="right">
+                    <a href="releases_ru.html" target="_blank">Релизы</a>
+                    <a href="reportage_ru.html">Репортажи</a>
+                    <a href="sponsors_ru.html">Спонсоры</a>
+                    <a href="contacts_ru.html">Контакты</a>
+                    <a href="http://tympanus.net/codrops/2011/11/21/elastic-image-slideshow-with-thumbnail-preview/">
+                        <strong>Вход</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            <div class="clr"></div>
+                <div><a href=""></a></div>
+                <div class="logo"><h1><a>Moren Morey Records</a></h1></div>
+            </div>
+        </div>
+            <div class="container">
+            <div class="header">
+            <h1 style="color :#e70036;">Новости</h1>
+        </div>
+            <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+                        <li>
+                            <img src="images/large/а.jpg" alt="image01" />
+                            <div class="ei-title">
+                                <h2>Tankard</h2>
+                                <h3>Hair Of The Dog</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/14400.jpg" alt="image02" />
+                            <div class="ei-title">
+                                <h2>Корпспэйнт</h2>
+                                <h3>МЫ милые внутри</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/144.jpg" alt="image03"/>
+                            <div class="ei-title">
+                                <h2>Новинка</h2>
+                                <h3>Куртка  25% скидка</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/е.jpg" alt="image04"/>
+                            <div class="ei-title">
+                                <h2>Интервью с  Тиллем Линдеманном и Питером Тэгтгреном</h2><a target="_blank" href="https://www.discogs.com/artist/2494458-Lindemann">
+                                <h3>Читать ...</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/large/д.jpg" alt="image05"/>
+                            <div class="ei-title">
+                                <h2>Ajattara</h2>
+                                <h3><a target="_blank" href="http://www.sourcewebzine.com.br/ajattara/">
+                                Виниловое безумие</h3>
+                                </div>
+                        </li>
+                        <li>
+                            <img src="images/large/г.jpg" alt="image06"/>
+                            <div class="ei-title">
+                                <h2>Kreator</h2>
+									<h3><a target="_blank" href="http://kreator-terrorzone.de/releases/1-phantom-antichrist">Жвой концерт</a></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+                        <li><a href="#">Slide 1</a><img src="images/thumbs/а.jpg" alt="thumb01" /></li>
+                        <li><a href="#">Slide 2</a><img src="images/thumbs/14400.jpg" alt="thumb02" /></li>
+                        <li><a href="#">Slide 3</a><img src="images/thumbs/144.jpg" alt="thumb03" /></li>
+                        <li><a href="#">Slide 4</a><img src="images/thumbs/е.jpg" alt="thumb04" /></li>
+                        <li><a href="#">Slide 5</a><img src="images/thumbs/д.jpg" alt="thumb05" /></li>
+                        <li><a href="#">Slide 6</a><img src="images/thumbs/г.jpg" alt="thumb06" /></li>
+                    </ul>
+                </div>
+                <div class="reference">
+                <p><a href="http://illustrators.ru/users/el_uzver" target="_blank">"Illustrators.ru"</a>создано UzverЪ</p>
+                    <p>Ознакомьтесь с лучшими работами художника, продвигающими сайт</p>
+                </div>
+            </div>
+        </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+           $(function() {
+                $('#ei-slider').eislideshow({
+                    animation           : 'center',
+                    autoplay            : true,
+                    slideshow_interval  : 3500,
+                    titlesFactor        : 0
+                });
+            });
+        </script>
+</br></br>
+
+
+
+<h1 style="text-shadow:  0 0 1em #fff;">Передовая звукозаписывающая компания из Финляндии</h1>
+</br></br>
+   <img src="images/large/tu.jpg" style="width: 100%;opacity: 0.7;margin-top: -160px;">
+    <h1>Лучшие видео с концертов</h1>
+        <div class="wrapper">
+            <div id="ei-slider" class="ei-slider">
+                <ul class="ei-slider-large">
+                    <li>
+                        <img src="images/large/giphy.gif" style="width: 100%;">
+                        <div class="ei-title">
+                            <a href="video_ru.html" target="_blank" style="color: #e70036; margin-top: -20px;">Вперед!!!</a>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>                </br>
+<h1>Известные музыканты, записанные на лейбле</h1>
+</section>
+<div class="vid">
+    <a href="klip.html">Смотри больше...</a>
+</br>
+</div>
+</div>
+</div>
+</div>
+<div class="money">Россия | Руб</div>
+</html>

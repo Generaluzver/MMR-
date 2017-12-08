@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MMR_Suomi</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+        <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+        
+        <link rel="stylesheet" href="css/style1.css" media="screen" type="text/css"/>
+        <link rel="stylesheet" href="script.js" media="screen" type="script/js"/>
+        <link rel="stylesheet" href="style1.scss" media="screen" type="text/scss"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cachse" />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+		</noscript>
+   </head>
+   <body>
+
+         <div class="container">
+            <div class="header">
+                <a href="home_su.html"><strong>&laquo;Tärkein</strong>Tutustu lisää!</a>
+                <span class="right">
+                    <a  target="_blank" href="releases_su.html">Releases</a>
+                    <a href="sponsors_su.html">Sponsorit</a>
+                    <a href="contacts_su.html">Ota yhteyttä</a>
+                    <a href="http://tympanus.net/codrops/2011/11/21/elastic-image-slideshow-with-thumbnail-preview/">
+                        <strong>Kirjaudu sisään | Liity</strong>
+                    </a>
+                </span>
+                <h1 style="color :#e70036; margin-bottom: -40px">Reportaasi</h1><h1 style="margin-bottom: -40px; color :#e70036;">Uutinen</h1><h1 style="color :#e70036;">Haastatella</h1>
+        </div>
+    </div>
+
+<style type="text/css">
+    /* Стили верхней навигации демо-страницы */
+/* Подключение шрифта Google */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic");
+
+/* Базовые стили демо-страницы */
+body {
+    font: 1em/1.67 'Open Sans', Arial, Sans-serif;
+    margin: 0;
+    background: #bcbcbc;
+}
+s
+.nav-top {
+    background: #3B7BAD;
+    position: fixed;
+    text-transform: uppercase;
+    top:0;
+    width: 100%;
+    font-size: 0.69em;
+    line-height: 2.2;
+    z-index: 9999;
+}
+
+.nav-top a {
+    color:#FFCE84;
+    padding: 0 1em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.nav-top a:hover {
+    color: #e74c3c;
+    background: rgba(255,255,255,0.6);
+}
+
+.nav-top span.right {
+    float: right;
+}
+
+.nav-top span.right a {
+    float: left;
+    display: block;
+}
+
+/* Заголовок демо-страницы */
+h1{
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Общий контейнер */
+.wrapper {
+    width: 100%;
+    margin: 3em auto;
+}
+
+/* ------------- Контейнер с адаптивными блоками------------- */
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    column-gap: 1.5em; /* Общее расстояние между колонками */
+    font-size: .85em;
+    -moz-column-gap: 1.5em; /* Расстояние между колонками для Firefox */
+    -webkit-column-gap: 1.5em; /* Расстояние между колонками  для Safari, Chrome и iOS */
+}
+
+/* Элементы в виде плиток с содержанием */
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box; /* Изменения алгоритма расчета ширины и высоты элемента.*/
+    -moz-box-sizing: border-box; /* Для Firefox */ 
+    -webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */ 
+    box-shadow: 2px 2px 4px 0 #ccc; /* Внешняя тень плиток */
+}
+
+/* Стили картинок, видое и фреймов внутри адаптивных плиток */
+img, iframe {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+/* Стили ссылок внутри плиток */
+.item a {
+text-decoration: none;
+color: #359CC6;
+margin: 0 10px;
+}
+
+/* Стили ссылок при наведении */
+.item a:hover {
+color: #E88F00;    
+border-bottom: 1px dotted #9F1D35;
+}
+
+/* Медиа-запросы для различных размеров адаптивного макета */
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+</style>
+<div class="wrapper"> 
+    <!-- Контейнер с адаптиными блоками -->
+<div class="masonry">
+    <!-- Адаптивные блоки с содержанием -->
+   <div class="item">
+       <img src="images/thumbs/е.jpg">
+           <b>Lindemann.</b>
+              <br>Haastattelu Till Lindemannin ja Peter Tägtgrenin kanssa.
+               <a target="_blank" href="#">Lisää »</a>
+    </div>
+    
+   <div class="item">
+       <img src="images/thumbs/5C0.jpg">
+           <br>
+               <b>Black Metal tytöt.</b><br>Tosi norjalaiset BM tytöt.<a target="_blank" href="#">Lisää »</a>
+   </div>
+    
+    <div class="item">
+            <img src="images/thumbs/tumblr.gif" frameborder="0" allowfullscreen type="video/mp4">
+        <b>Amorphis</b>
+        <br>The heaven of my heart... Sydämeni taivas<a href="https://youtu.be/blUHcd544nI">Lisää »</a>
+        </div>
+
+   <div class="item">
+       <img src="images/thumbs/NATTE_COVER.jpg">
+       <br>
+       <b>Todellinen norjalainen musta metalli</b><br>Pari kuukautta sitten kävin läpi artikkeleita uudesta valokuvauskirjasta tunnetusta dokumentaarisesta valokuvaaja Peter Bestesta. Peter Beste kanssa Immortal 2009.<a target="_blank" href="http://www.peterbeste.com/about/">Lisää »</a>
+     </div>
+    
+   <div class="item">
+       <img src="images/thumbs/thumb-1920-339963.jpg">
+           <br>
+               <b>Arts</b>Kuuluisa taidetta ja julisteita, jotka tulostuvat jokaiseen makuun<a href="http://dbmast.ru/category/snippety">Lisää »</a>
+    </div>
+    
+   <div class="item">
+       <img src="images/thumbs/Gwar.jpg">
+       <br>
+       <b>Huhtikuun sarjakuvat GWAR: lla</b><br>Kampanjan jälkeen Kookstarterin maantie-hosting-alustalla GWAR julkaisee sarjan sarjakuvalehtiä "Gwar: Orgasmageddon!" julkaisussa Dynamite Entertainment.<a  target="_blank" href="#">Lisää »</a>
+   </div>
+    
+   <div class="item">
+        <img src="images/thumbs/6af.jpg">
+           <b>IN FLAMES</b><br>
+            Basisti Peter Ivers päätyi vapaaehtoisesti lähteä IN FLAMES "harjoittamaan muita musiikillisia ja ei-musiikillisia yrityksiä" ja nykyinen Yhdysvaltain kiertue on hänen viimeinen tässä ryhmässä.<a  target="_blank" href="http://dbmast.ru/besplatnyj-kurs-po-osnovam-adaptivnoj-verstki-sajta">Lisää »</a>
+        </div>
+    
+    
+   <div class="item">
+       <img src="images/thumbs/muz.jpg">
+           <b>Onnettomuus</b><br>Auto AC / DC-laulaja Brian Johnson kääntyi Celebrity Challenge -kilpailun aikana ...<a  target="_blank" href="http://dark-city.ru/99/168-news/3521-acdc.html">Lisää »</a>
+    </div>
+    
+    <div class="item">
+        <img src="images/thumbs/gnk.jpg"><br>
+            <b>HOOLIGANS: SOVIET METALLIST EI KÄYTTÄMÄTTÖMIEN JÄRJESTELYTÄ KÄYTÄNNÖSSÄ</b><br>Jo jo legendaarisen arkistokomitean "Komposti" kuraattori Misha Buster valmistautuu julkaisemaan sähköisessä muodossaan toisen osan neuvostostaan "Hooligans-80" -kulttuureista ...<a  target="_blank" href="http://www.furfur.me/furfur/culture/culture/213705-sovetskiy-metallist">Lisää »</a>
+   </div>
+    
+    <div class="item">
+       <img src="images/thumbs/stare.jpg">
+           <br>
+        <b>Tulemme...
+</b>Kuva: Peter Beste.<a target="_blank" href="http://dbmast.ru/category/jquery">Lisää »</a>
+    </div>
+    <div class="item">
+       <img src="images/thumbs/01.gif">
+           <b>Suomi pidetään maailman johtajana raskasmetallityyppisissä musiikkiryhmissä</b>
+        Voit tuoda suomalaisten "metallintyöiden" nimet pitkään aikaan, mutta riittää muistaa Eurovisio Lordin voittaja.<a href="http://dbmast.ru/modalnye-vsplyvayushhie-okna-s-pomoshhyu-css3-bez-javascript">Lisää »</a>
+    </div>
+
+    <div class="item">
+       <img src="images/thumbs/suffocation.jpg">
+       <br><b>Suffocation, Morbid Angel ja Revocation </b>
+       SUFFOCATION julkaisee uuden albumin "... Of The Dark Light" 9. kesäkuuta Nuclear Blast Recordsin kautta.<a target="_blank" href="#">Lisää »</a>
+   </div>
+    <!-- Конец адаптивных блоков с содержанием -->
+    
+</div>
+    <!-- Конец контейнера с адаптиными блоками -->
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+                    animation           : 'center',
+                    autoplay            : true,
+                    slideshow_interval  : 3500,
+                    titlesFactor        : 0
+                });
+            });
+        </script>
+
+</br>
+</div>
+
+
+</div>
+
+<div class="reference" style="padding: 20px;"><p>Tekijänoikeudet © 2017</p></div>
+</body>
+</html>
